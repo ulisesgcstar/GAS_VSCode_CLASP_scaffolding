@@ -1,9 +1,10 @@
-# 🏭 Scaffolding (GAS Boilerplate)
+Markdown# 🏭 Gaspar Enterprise Scaffolding (GAS Boilerplate)
 
 > **Versión:** 2.0 | **Arquitectura:** MVC / Cloud-Native
 > **Autor:** Arquitectura Técnica / Ulises GC
 
-Permite desplegar un entorno de desarrollo para **Google Apps Script**, automatizando la configuración de herramientas, calidad de código y arquitectura de software.
+Esta es la **"Fábrica de Proyectos"** oficial para el ecosistema Gaspar.
+Permite desplegar un entorno de desarrollo profesional para **Google Apps Script** en menos de 30 segundos, automatizando la configuración de herramientas, calidad de código y arquitectura de software.
 
 ---
 
@@ -44,7 +45,6 @@ Descarga esta plantilla en tu carpeta de herramientas:
 ```bash
 git clone [https://github.com/TU_USUARIO/gaspar-enterprise-boilerplate.git](https://github.com/TU_USUARIO/gaspar-enterprise-boilerplate.git)
 cd gaspar-enterprise-boilerplate
-
 2. Generar un Nuevo ProyectoEjecuta el script automatizador:Bash./init_project.sh
 3. Sigue el AsistenteEl script te pedirá:Nombre del Proyecto: (Ej. Gaspar-Monterrey).Tipo de Despliegue:1: Crear Hoja y Script Nuevos en Drive.2: Clonar un proyecto existente (necesitas el Script ID).3: Modo Offline (Solo crea archivos locales).¡Listo! VS Code se abrirá automáticamente con tu entorno configurado.🏗️ Arquitectura GeneradaCada proyecto nuevo nace con esta estructura profesional:Plaintext/src
   ├── config/
@@ -54,4 +54,26 @@ cd gaspar-enterprise-boilerplate
   ├── utils/                  # Helpers (Mailer, Fechas)
   ├── index.js                # Orquestador (Triggers onOpen/onFormSubmit)
   └── appsscript.json         # Manifiesto de Google
-🧠 Características "Smart"Autocompletado (IntelliSense)Gracias al archivo jsconfig.json incluido, VS Code te sugerirá métodos de Google automáticamente:Escribe SpreadsheetApp. y verás la magia.Calidad de Código (Linter)El archivo .eslintrc.json vigilará que no cometas errores básicos (como usar variables no definidas o sintaxis obsoleta).Configuración "Soft"El servicio ConfigService ya viene programado para buscar una hoja llamada ADMIN_CONFIG y leer sus claves/valores.Uso inmediato: const config = ConfigService.get();📦 Comandos DisponiblesUna vez dentro de tu nuevo proyecto, puedes usar estos comandos en la terminal:ComandoAcciónnpm run pushSube tu código a Google Drive (clasp push).npm run pullDescarga cambios desde Google Drive (clasp pull).npm run watchSube cambios automáticamente cada vez que guardas (clasp push --watch).📄 LicenciaPropiedad interna de Gestión de Equipos Gaspar.Desarrollado para estandarización de procesos técnicos.
+```
+🧠 Características "Smart"
+Autocompletado (IntelliSense)
+Gracias al archivo ```jsconfig.json incluido```, VS Code te sugerirá métodos de Google automáticamente:
+
+Escribe ```SpreadsheetApp.``` y verás la magia.
+
+Calidad de Código (Linter)
+El archivo ```.eslintrc.json``` vigilará que no cometas errores básicos (como usar variables no definidas o sintaxis obsoleta).
+
+Configuración "Soft"
+El servicio ConfigService ya viene programado para buscar una hoja llamada ADMIN_CONFIG y leer sus claves/valores.
+
+Uso inmediato: ```const config = ConfigService.get();```
+
+📦 Comandos DisponiblesUna vez dentro de tu nuevo proyecto, puedes usar estos comandos en la terminal:
+
+```npm run push```	Sube tu código a Google Drive (clasp push).
+
+```npm run pull```	Descarga cambios desde Google Drive (clasp pull).
+
+```npm run watch```	Sube cambios automáticamente cada vez que guardas (clasp push --watch).
+
