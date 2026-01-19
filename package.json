@@ -1,0 +1,16 @@
+{
+  "name": "google_gas_template",
+  "version": "1.0.0",
+  "description": "Plantilla Profesional para Google Apps Script",
+  "scripts": {
+    "push": "clasp push",
+    "pull": "clasp pull",
+    "watch": "clasp push --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.57",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  }
+}

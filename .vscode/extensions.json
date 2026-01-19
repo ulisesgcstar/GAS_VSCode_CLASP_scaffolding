@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "google.apps-script",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens"
+  ]
+}

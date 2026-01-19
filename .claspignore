@@ -1,0 +1,13 @@
+# Ignorar todo lo que no sea código fuente
+**/**
+!src/**
+!appsscript.json
+
+# Ignorar configuraciones de VS Code y Git
+.vscode/
+.git/
+.gitignore
+package.json
+package-lock.json
+README.md
+init_project.sh
