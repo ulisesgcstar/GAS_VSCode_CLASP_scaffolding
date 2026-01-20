@@ -1,13 +1,12 @@
-# Ignorar carpetas de sistema y configuración
-.git/
-.vscode/
-node_modules/
+# Ignorar todo lo que no sea código fuente
+**/**
+!src/**
+!appsscript.json
 
-# Ignorar archivos de configuración del proyecto
-.clasp.json
-.eslintrc.json
+# Ignorar configuraciones de VS Code y Git
+.vscode/
+.git/
 .gitignore
-jsconfig.json
 package.json
 package-lock.json
 README.md
